@@ -10,6 +10,7 @@ import UseffectTask from "./UseffectTask";
 import UseReducerHook from "./UseReducerHook";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import UseMemo from "./UseMemo";
+import ReactMemo from "./ReactMemo";
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +50,10 @@ function App() {
     {
       path:'memo',
       element:<UseMemo/>
+    },
+    {
+      path:"react-memo",
+      element:<ReactMemo/>
     }
   ]);
   return (
