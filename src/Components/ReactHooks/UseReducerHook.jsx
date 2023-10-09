@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
-import NewComponent from "./NewComponent";
-import './UsereducerHook.css'
+import NewComponent from "../NewComponent";
+import "./UsereducerHook.css";
 
 function UseReducerHook() {
   const InitialState = 0;
@@ -20,18 +20,18 @@ function UseReducerHook() {
     //   default:
     //     return state;
 
-    if (action.type ==="increase") {
-      return state = state + 1;
+    if (action.type === "increase") {
+      return (state = state + 1);
     } else if (action.type === "decrease") {
-      return state =state>0?state-1:0;
+      return (state = state > 0 ? state - 1 : 0);
     } else if (action.type === "increment2") {
-     return state = state + 2;
+      return (state = state + 2);
     } else if (action.type === "decrement2") {
-      return state = state >0?state-2:0;
-    } else if(action.type==='reset') {
-       return state=0;
-    }else{
-        return state
+      return (state = state > 0 ? state - 2 : 0);
+    } else if (action.type === "reset") {
+      return (state = 0);
+    } else {
+      return state;
     }
   };
 
@@ -75,7 +75,7 @@ function UseReducerHook() {
         reset
       </button>
       <div className="new-component">
-      <NewComponent value={state}/>
+        <NewComponent value={state} />
       </div>
     </div>
   );

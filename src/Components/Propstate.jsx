@@ -10,7 +10,7 @@ function Propstate(props) {
 </h1>
             ))}
         
-    </div>
+    </div>  
   )
 }
 
